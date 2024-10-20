@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ne">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Report</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 7pt;
+        line-height: 1.2;
+        margin: 0;
+        padding: 5mm;
+        box-sizing: border-box;
+        width: 210mm;
+        height: 297mm;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 0mm;
+      }
+
+      .logo {
+        width: 15mm;
+        height: auto;
+        float: left;
+      }
+
+      h1 {
+        font-size: 12pt;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 10pt;
+        margin: 1mm 0;
+      }
+
+      h3 {
+        font-size: 8pt;
+        margin: 0mm 0;
+        text-decoration: underline;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1mm;
+      }
+
+      th,
+      td {
+        border: 0.5pt solid #000;
+        padding: 0.5mm 1mm;
+        text-align: left;
+      }
+
+      .patient-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0mm;
+      }
+
+      .main-content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .column {
+        width: 49%;
+      }
+
+      .signatures {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2mm;
+        font-size: 6pt;
+      }
+      input{
+        width: 65%;
+        border: none;
+        font-size: 7pt;
+      }
+
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="https://pokharamun.gov.np/sites/pokharamun.gov.np/files/img/logo_015.png" alt="पोखरा महानगरपालिका लोगो" class="logo">
+      <h1>पोखरा महानगरपालिका</h1>
+      <p style="margin-top: 0mm;">नगर कार्यपालिकाको कार्यालय <br> स्वास्थ्य महाशाखा <br> शहरी स्वास्थ्य प्रबर्धन केन्द्र, वडा नं.-८, नयाँबजार </p>
+      <p style="margin-top: 0mm; float: right; margin-top: -5mm;">फोन नं.: ०६१-५७०३२७८</p><br>
+      <p style="margin-top: 0mm; margin-bottom: 0mm; font-size: 14pt; border: 1px solid black; font-weight: 700; text-align: center;">LABORATORY REPORT</p>
+    </div>
+    <div class="patient-info">
+      <p style="width:100%;">Patient Name: <input style="width:50%; border:solid 1px black;" type="text"> Age/Sex: <input style="width:15%; border:solid 1px black;" type="text"></p>
+      <p style="width:100%;">Ref by: <input style="width:50%; border:solid 1px black;" type="text"> Date: <input style="width:31%; border:solid 1px black;" type="text"></p>
+    </div>
+    <div class="main-content">
+      <div class="column">
+        <table>
+          <tr>
+            <th>INVESTIGATION</th>
+            <th>REPORT</th>
+            <th>REF-RANGE</th>
+          </tr>
+          <tr>
+            <th><h3>SERUM/PLASMA</h3></th>
+          </tr>
+          <tr>
+            <td>RBS</td>
+            <td><input type="text"></td>
+            <td>&lt;160mg/dl</td>
+          </tr>
+          <tr>
+            <td>FBS</td>
+            <td><input type="text"></td>
+            <td>70-110 mg/dl</td>
+          </tr>
+          <tr>
+            <td>PPBS</td>
+            <td><input type="text"></td>
+            <td>&lt;140mg/dl</td>
+          </tr>
+          <tr>
+            <td>Uric Acid</td>
+            <td><input type="text"></td>
+            <td>3.5-7.2mg/dl</td>
+          </tr>
+          <tr>
+            <td>Serum Urea</td>
+            <td><input type="text"></td>
+            <td>15-40 mg/dl</td>
+          </tr>
+          <tr>
+            <td>Serum Creatinine</td>
+            <td><input type="text"></td>
+            <td>0.6-1.5 mg/dl</td>
+          </tr>
+          <tr>
+            <td>HbA1C</td>
+            <td><input type="text"></td>
+            <td>6.0-8.3%</td>
+          </tr>
+          <tr>
+            <td>Serum a-Amylase</td>
+            <td><input type="text"></td>
+            <td>(25-125 U/L)</td>
+          </tr>
+          <tr>
+            <td>Urine Amylase</td>
+            <td><input type="text"></td>
+            <td>(&lt;470U/L)</td>
+          </tr>
+          <tr>
+            <td><h3>LIPID PROFILE</h3></td>
+
+          </tr>
+          <tr>
+            <td>Total Cholesterol</td>
+            <td><input type="text"></td>
+            <td>130-250 mg/dl</td>
+          </tr>
+          <tr>
+            <td>Triglyceride</td>
+            <td><input type="text"></td>
+            <td>40-170 mg/dl</td>
+          </tr>
+          <tr>
+            <td>HDL</td>
+            <td><input type="text"></td>
+            <td>30-65 mg/dl</td>
+          </tr>
+          <tr>
+            <td>LDL</td>
+            <td><input type="text"></td>
+            <td>72-185 mg/dl</td>
+          </tr>
+          <tr>
+            <td>VLDL</td>
+            <td><input type="text"></td>
+            <td>10-50 mg/dl</td>
+          </tr>
+          <tr>
+            <th><h3>LIVER FUNCTION TEST</h3></th>
+          </tr>
+          <tr>
+            <td>Total Protein</td>
+            <td><input type="text"></td>
+            <td>6.0-8.0g/dl</td>
+          </tr>
+          <tr>
+            <td>Albumin</td>
+            <td><input type="text"></td>
+            <td>3.2-5.5g/dl</td>
+          </tr>
+          <tr>
+            <td>Globulin</td>
+            <td><input type="text"></td>
+            <td>2.5-3.0g/dl</td>
+          </tr>
+          <tr>
+            <td>A/G Ratio</td>
+            <td><input type="text"></td>
+            <td>1.0-1.8</td>
+          </tr>
+          <tr>
+            <td>Total Bilirubin</td>
+            <td><input type="text"></td>
+            <td>0.3-1.0 mg/dl</td>
+          </tr>
+          <tr>
+            <td>Direct Bilirubin</td>
+            <td><input type="text"></td>
+            <td>0.1-0.3 mg/dl</td>
+          </tr>
+          <tr>
+            <td>Indirect Bilirubin</td>
+            <td><input type="text"></td>
+            <td>0.2-0.7 mg/dl</td>
+          </tr>
+          <tr>
+            <td>GOT (AST)</td>
+            <td><input type="text"></td>
+            <td>&lt;40 U/L</td>
+          </tr>
+          <tr>
+            <td>GPT (ALT)</td>
+            <td><input type="text"></td>
+            <td>&lt;40 U/L</td>
+          </tr>
+          <tr>
+            <td>ALKP</td>
+            <td><input type="text"></td>
+            <td>Children: 270-1190 IU/L <br>Adult: 110-310 IU/L </td>
+          </tr>
+          <tr>
+            <td>Y-GT</td>
+            <td><input type="text"></td>
+            <td>&lt;50U/L</td>
+          </tr>
+          <tr>
+            <th><h3>ELECTROLYTE TEST</h3></th>
+          </tr>
+          <tr>
+            <td>Sodium</td>
+            <td><input type="text"></td>
+            <td>135-150 m.mol/L</td>
+          </tr>
+          <tr>
+            <td>Potassium</td>
+            <td><input type="text"></td>
+            <td>3.5-5.3 m.mol/L</td>
+          </tr>
+          <tr>
+            <td>Calcium</td>
+            <td><input type="text"></td>
+            <td>8.5-10.4 mg/dl</td>
+          </tr>
+          <tr>
+            <td>Phosphorus</td>
+            <td><input type="text"></td>
+            <td>27-4.5 mg/dl</td>
+          </tr>
+        </table>
+        <h3>SERGLOGLCAL TESTS</h3>
+        <table>
+          <tr>
+            <th>INVESTIGATION</th>
+            <th>REPORT</th>
+          </tr>
+          <tr>
+            <td>VDRL/RPR</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>TPHA</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>ASO(Titer)</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>CRP</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>RA Factor</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>HIV (I&II) Sport</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>HBSAg-Spot</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>HCV-Spot</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Dengue NS1</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Dangue IgM/IgG</td>
+            <td><input type="text"></td>
+          </tr>
+        </table>
+        <h3>Widal Test</h3>
+        <table>
+          <tr>
+            <th>INVESTIGATION</th>
+            <th>REPORT</th>
+          </tr>
+          <tr>
+            <td>S.Typhi "O"</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>S.Typhi "H"</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>S.Paratyphi "AH"</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>S.Paratyphi "BH"</td>
+            <td><input type="text"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <table>
+          <tr>
+            <th>INVESTIGATION</th>
+            <th>REPORT</th>
+            <th>REF-RANGE</th>
+          </tr>
+          <tr>
+            <td><h3>HEMATOLOGICAL TESTS</h3></td>
+          </tr><tr>
+            <td>Hemoglobin</td>
+            <td><input type="text"></td>
+            <td>12-16g/dl</td>
+          </tr>
+          <tr>
+            <td>PCV</td>
+            <td><input type="text"></td>
+            <td>32-45%</td>
+          </tr>
+          <tr>
+            <td>ESR</td>
+            <td><input type="text"></td>
+            <td>0-20mm/1°Hr</td>
+          </tr>
+          <tr>
+            <td>Total Count</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>WBC</td>
+            <td><input type="text"></td>
+            <td>4000-11000/mm3</td>
+          </tr>
+          <tr>
+            <td>RBC</td>
+            <td><input type="text"></td>
+            <td>4.0-6.0x10/mm3</td>
+          </tr>
+          <tr>
+            <td>Platelets</td>
+            <td><input type="text"></td>
+            <td>1.5-4.6x10/mm3</td>
+          </tr>
+          <tr>
+            <th><h3>DIFFERENTIAL COUNT</h3></th>
+          </tr>
+          <tr>
+            <td>Neutrophils</td>
+            <td><input type="text"></td>
+            <td>45-75%</td>
+          </tr>
+          <tr>
+            <td>Lymphocytes</td>
+            <td><input type="text"></td>
+            <td>20-45%</td>
+          </tr>
+          <tr>
+            <td>Monocytes</td>
+            <td><input type="text"></td>
+            <td>2-8%</td>
+          </tr>
+          <tr>
+            <td>Eosinophilis</td>
+            <td><input type="text"></td>
+            <td>1-6%</td>
+          </tr>
+          <tr>
+            <td>Basophils</td>
+            <td><input type="text"></td>
+            <td>0-2%</td>
+          </tr>
+          <tr>
+            <td>Retics</td>
+            <td><input type="text"></td>
+            <td>&lt;2%</td>
+          </tr>
+          <tr>
+            <td>BT</td>
+            <td><input type="text"></td>
+            <td>1-6 minutes</td>
+          </tr>
+          <tr>
+            <td>CT</td>
+            <td><input type="text"></td>
+            <td>6-12 minutes</td>
+          </tr>
+          <tr>
+            <td>APTT</td>
+            <td><input type="text"></td>
+            <td>28-32 Seconds</td>
+          </tr>
+          <tr>
+            <td>PT</td>
+            <td>Test: <input type="text"><br>Control:<input type="text"> </td>
+            <td>INR:<input type="text"></td>
+          </tr>
+          <tr>
+            <td>Blood Group (ABO)</td>
+            <td>Rh:<input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Malaria Parasite</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Peripheral Smear</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <th><h3>RED CELL INDICES</h3></th>
+          </tr>
+          <tr>
+            <td>MCV</td>
+            <td><input type="text"></td>
+            <td>83-99 fl</td>
+          </tr>
+          <tr>
+            <td>MCH</td>
+            <td><input type="text"></td>
+            <td>27-32pg</td>
+          </tr>
+          <tr>
+            <td>MCHC</td>
+            <td><input type="text"></td>
+            <td>32-36%</td>
+          </tr>
+        </table>
+        <h3>URINE ANALYSIS</h3>
+        <table>
+          <tr>
+            <td>Colour</td>
+            <td>Sp. gravity</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Transparency</td>
+            <td>Pus cells</td>
+            <td><input type="text">/hpf</td>
+          </tr>
+          <tr>
+            <td>Ph</td>
+            <td>RBC</td>
+            <td><input type="text">/hpf</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>Epithelial Cells</td>
+            <td><input type="text">/hpf</td>
+          </tr>
+          <tr>
+            <td>Sugar</td>
+            <td>Casts</td>
+            <td><input type="text">/hpf</td>
+          </tr>
+          <tr>
+            <td>Bile-Salts</td>
+            <td>Crystals</td>
+            <td><input type="text">/hpf</td>
+          </tr>
+          <tr>
+            <td>Bile- Pigments</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Ketones<br>Microalbumin</td>
+            <td>Others:<input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Urine Pregnancy test</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+        </table>
+        <h3>STOOL ANALYSIS</h3>
+        <table>
+          <tr>
+            <td>Colour<input type="text"></td>
+            <td>Consistency</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Mucus<input type="text"></td>
+            <td>Blood</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Parasites</td>
+            <td colspan="2"><input type="text"></td>
+          </tr>
+          <tr>
+            <td>RBCS</td>
+            <td><input type="text"></td>
+            <td><input type="text">/hpf</td>
+          </tr>
+          <tr>
+            <td>Pus Cells</td>
+            <td><input type="text"></td>
+            <td><input type="text">/hpf</td>
+          </tr>
+          <tr>
+            <td>Occult Blood Test:</td>
+            <td colspan="2"><input type="text"></td>
+          </tr>
+          <tr>
+            <td>H Pylori</td>
+            <td colspan="2"><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Others:</td>
+            <td colspan="2"><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Mantoux Test:</td>
+            <td colspan="3"><input type="text"></td>
+          </tr>
+            <td>For AFB (ZN-Stain)</td>
+            <td colspan="3"><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Gram's Stain</td>
+            <td colspan="3"><input type="text"></td>
+          </tr>
+          <tr>
+            <td>KOH Preparation For Fungi:</td>
+            <td colspan="3"><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Urethral Swab for Gonococci:</td>
+            <td colspan="3"><input type="text"></td>
+          </tr>
+      </table>
+  </div>
+</div>
+          <div class="signatures">
+        <div>....................................<br>Lab Assistance</div>
+        <div>....................................<br>Lab Technologist</div>
+        <div>.........................................<br>Medical technologist</div>
+    </div>
+    </body>
+</html>
